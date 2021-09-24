@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+<div class="d-flex align-items-center justify-content-center">
+<h1>Book Ticket</h1><br>
+<%if current_user%><br>
+        Logged in with : <%= current_user.name %><br>
+        <%end%>
+        <br>
+        <%= button_to "Log Out", logout_path, method: :delete %><br>
+        
+</div>
+</html>
+
